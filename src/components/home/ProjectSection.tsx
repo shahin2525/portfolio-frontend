@@ -16,7 +16,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
   const displayedProjects = projects.slice(0, 6); // Show max 6 projects
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-slate-900">
+    <section className="w-full py-5 md:py-8 lg:py-10 bg-slate-900">
       <div className="container px-4 md:px-6 mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

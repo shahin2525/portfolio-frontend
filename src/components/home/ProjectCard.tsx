@@ -25,8 +25,10 @@ export function ProjectCard({ project, customDelay = 0 }: ProjectCardProps) {
         <Image
           src={project.images[0]}
           alt={project.title}
-          fill
+          height={400}
+          width={400}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
+          priority
         />
       </div>
 
@@ -56,8 +58,7 @@ export function ProjectCard({ project, customDelay = 0 }: ProjectCardProps) {
         >
           <Link
             // href={project.projectUrl}
-            href="//dfd"
-            target="_blank"
+            href={`/projects/${project._id}`}
             className="flex items-center gap-2"
           >
             <ExternalLink className="h-4 w-4" />

@@ -10,5 +10,6 @@ export type TProject = {
   createdAt?: Date; // Optional creation timestamp
   updatedAt?: Date; // Optional update timestamp
   githubRepo?: string; // Optional GitHub repository link
-  status?: "active" | "archived" | "in-progress"; // Optional project status
+  status?: string; // Optional project status
+  my_role?: string; // Optional project status
 };

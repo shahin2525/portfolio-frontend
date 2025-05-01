@@ -7,7 +7,7 @@ import React from "react";
 
 const HomePage = async () => {
   const { data } = await getAllProjects();
-  console.log("data", data);
+  // console.log("data", data);
   return (
     <div>
       <IntroSection />
