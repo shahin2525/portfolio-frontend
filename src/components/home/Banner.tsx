@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Download } from "lucide-react";
-import logo from "@/app/assets/profile.jpg";
+
 import logo2 from "@/app/assets/profile2 (2).png";
 
 export function BannerSection() {
@@ -27,7 +27,7 @@ export function BannerSection() {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="w-[140px] h-[140px] md:w-[160px] md:h-[160px] lg:w-[180px] lg:h-[180px] mx-4" /* Balanced margin */
+            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] mx-4" /* Balanced margin */
           >
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
               <Image
@@ -53,17 +53,18 @@ export function BannerSection() {
               Current Education
             </h2>
 
-            <div className="space-y-2 md:space-y-3 text-slate-300">
+            <div className="space-y-2 md:space-y-3 text-slate-300 font-bold">
               <p className="text-base md:text-lg leading-tight">
-                <span className="font-semibold text-blue-400">Studying:</span>{" "}
-                B.Sc in Computer Science
+                <span className="font-semibold text-blue-400">Studying: </span>
+                BSS Honours final year in Political Science
               </p>
               <p className="text-base md:text-lg leading-tight">
-                <span className="font-semibold text-blue-400">At:</span>{" "}
-                University of Chittagong
+                <span className="font-semibold text-blue-400">At: </span>
+                Mohammadpur Kendriya College,Nurjahan road, Mohammadpur,
+                Dhaka-1207, Dhaka, Bangladesh
               </p>
               <p className="text-base md:text-lg leading-tight">
-                <span className="font-semibold text-blue-400">Focus:</span> Web
+                <span className="font-semibold text-blue-400">Focus: </span> Web
                 Development & AI
               </p>
             </div>
