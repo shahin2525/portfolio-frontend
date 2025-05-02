@@ -114,7 +114,11 @@ export default function ContactForm() {
             )}
           />
 
-          <Button type="submit" className="w-full mt-4" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            className="w-full mt-4 cursor-pointer"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? "Sending..." : "Send Message"}
           </Button>
         </form>

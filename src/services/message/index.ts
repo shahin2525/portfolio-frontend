@@ -2,21 +2,26 @@
 import { revalidateTag } from "next/cache";
 import { FieldValues } from "react-hook-form";
 
-export const createMessage = async (data: FieldValues) => {
+export const createMessage = async (
+  data: FieldValues,
+  limit?: number,
+  page?: number
+) => {
   try {
     const res = await fetch(
-      `${process.env.BASA_FINDER_PUBLIC_BASE_API}/landlords/listings`,
+      `${process.env.PORTFOLIO_PUBLIC_BASE_API}/messages?limit=${limit}&page=${page}`,
       {
         method: "POST",
-        // headers: {
-        //   Authorization: (await cookies()).get("accessToken")!.value,
-        //   "Content-Type": "application/json",
-        // },
+        headers: {
+          //   Authorization: (await cookies()).get("accessToken")!.value,
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(data),
       }
     );
 
     revalidateTag("Message");
+    console.log("res server", res);
 
     return res.json();
   } catch (error: any) {
