@@ -1,4 +1,3 @@
-// components/ProjectCard.tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -7,10 +6,12 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { TProject } from "@/types/project";
+
 interface ProjectCardProps {
   project: TProject;
-  customDelay?: number; // Add this line
+  customDelay?: number;
 }
+
 export function ProjectCard({ project, customDelay = 0 }: ProjectCardProps) {
   return (
     <motion.div
@@ -21,14 +22,19 @@ export function ProjectCard({ project, customDelay = 0 }: ProjectCardProps) {
       whileHover={{ y: -5 }}
       className="group overflow-hidden rounded-lg border border-slate-700 bg-slate-800/50 hover:bg-slate-800/70 transition-all duration-300 shadow-lg"
     >
-      <div className="relative h-48 w-full overflow-hidden">
+      <div className="relative aspect-video w-full overflow-hidden">
+        {" "}
+        {/* Changed to aspect-video */}
         <Image
           src={project.images[0]}
           alt={project.title}
-          height={400}
-          width={400}
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          fill
           priority
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{
+            objectFit: "cover",
+          }}
         />
       </div>
 
@@ -57,8 +63,7 @@ export function ProjectCard({ project, customDelay = 0 }: ProjectCardProps) {
           className="w-full border-slate-600 hover:border-blue-400 hover:text-blue-400"
         >
           <Link
-            // href={project.projectUrl}
-            href={`/projects/${project._id}`}
+            href={`/project/${project._id}`}
             className="flex items-center gap-2"
           >
             <ExternalLink className="h-4 w-4" />

@@ -62,7 +62,6 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 const ProjectDetails = ({ project }: { project: TProject }) => {
-  console.log("project", project);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -81,7 +80,7 @@ const ProjectDetails = ({ project }: { project: TProject }) => {
             alt={project?.title || "project-de"}
             height={700}
             width={700}
-            className="object-cover"
+            className="object-cover w-full"
             priority
           />
         </motion.div>

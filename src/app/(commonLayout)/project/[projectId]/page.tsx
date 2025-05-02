@@ -1,4 +1,4 @@
-import ProjectDetails from "@/components/home/projects/ProjectDetails";
+import ProjectDetails from "@/components/home/project/ProjectDetails";
 
 import { getSingleProject } from "@/services/project";
 
@@ -10,10 +10,9 @@ const ProjectDetailsPage = async ({
   const { projectId: productId } = await params;
 
   const { data: project } = await getSingleProject(productId);
-  console.log("data1", project);
 
   return (
-    <div>
+    <div className="px-10 py-8">
       <ProjectDetails project={project} />
     </div>
   );
