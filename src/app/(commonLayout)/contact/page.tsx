@@ -1,9 +1,10 @@
+import ContactForm from "@/components/contact/ContactForm";
 import React from "react";
 
 const ContactPage = () => {
   return (
-    <div>
-      <h1>Contact page</h1>
+    <div className="flex justify-center items-center py-20">
+      <ContactForm />
     </div>
   );
 };
