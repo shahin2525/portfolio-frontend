@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex flex-1 items-center justify-start">
           <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold">YourLogo</span>
+            <span className="text-xl font-bold ">MS</span>
           </Link>
         </div>
 

@@ -11,7 +11,7 @@ const AllBlogsPage = async () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold sm:text-4xl dark:text-white">
-            Our Blog Posts
+            My All Blogs
           </h1>
           <p className="mt-4 text-xl dark:text-gray-300">
             Discover our latest articles and insights

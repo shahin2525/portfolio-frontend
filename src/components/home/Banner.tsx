@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Download } from "lucide-react";
 
 import logo2 from "@/app/assets/profile2 (2).png";
+import Link from "next/link";
 
 export function BannerSection() {
   return (
@@ -75,13 +76,18 @@ export function BannerSection() {
               whileTap={{ scale: 0.97 }}
               className="mt-4 md:mt-5" /* Consistent top margin */
             >
-              <Button
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-500 text-white text-sm md:text-base px-6" /* Balanced padding */
+              <Link
+                href="https://drive.google.com/file/d/1RXgbOmSi8ssH4VCW58LH34fUBmflvc3Z/view"
+                target="blank"
               >
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-500 text-white text-sm md:text-base px-6" /* Balanced padding */
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

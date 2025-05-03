@@ -58,9 +58,9 @@ export default function ContactForm() {
 
   return (
     <div className="border-2 border-gray-300 rounded-xl flex-grow max-w-md w-full p-5">
-      <div className="mb-6">
-        <h1 className="text-xl font-semibold">Contact Us</h1>
-        <p className="font-extralight text-sm text-gray-600">
+      <div className="mb-4">
+        <h1 className="text-xl font-semibold">Contact Me</h1>
+        <p className="font-extralight text-sm pt-2">
           We&apos;d love to hear from you!
         </p>
       </div>

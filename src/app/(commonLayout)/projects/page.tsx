@@ -11,10 +11,10 @@ const AllProjectsPage = async () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold sm:text-4xl dark:text-white">
-            Our Projects
+            My All Projects
           </h1>
           <p className="mt-4 text-xl dark:text-gray-300">
-            Explore our collection of innovative projects
+            Explore my collection of innovative projects
           </p>
         </div>
 

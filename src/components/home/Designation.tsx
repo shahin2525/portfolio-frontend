@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 
 export function IntroSection() {
@@ -68,9 +69,11 @@ export function IntroSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-white hover:bg-blue-500 h-11 px-8 py-2 shadow-lg shadow-blue-500/20">
-              View My Work
-            </button>
+            <Link href="/projects">
+              <button className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-white hover:bg-blue-500 h-11 px-8 py-2 shadow-lg shadow-blue-500/20 cursor-pointer">
+                View My Projects
+              </button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
