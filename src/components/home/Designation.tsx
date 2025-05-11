@@ -26,6 +26,17 @@ export function IntroSection() {
           className="flex flex-col items-center text-center"
         >
           {/* Designation with typewriter effect */}
+
+          {/* Name with emphasis */}
+          <motion.h1
+            variants={fadeIn}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-slate-50"
+          >
+            Hi, I&apos;m{" "}
+            <span className="text-blue-400 hover:text-blue-300 transition-colors">
+              Md Shahin
+            </span>
+          </motion.h1>
           <motion.h2
             variants={fadeIn}
             className="text-lg md:text-xl font-medium text-slate-300 mb-2"
@@ -40,17 +51,6 @@ export function IntroSection() {
               delaySpeed={2000}
             />
           </motion.h2>
-
-          {/* Name with emphasis */}
-          <motion.h1
-            variants={fadeIn}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-slate-50"
-          >
-            Hi, I&apos;m{" "}
-            <span className="text-blue-400 hover:text-blue-300 transition-colors">
-              Md. Shahin
-            </span>
-          </motion.h1>
 
           {/* Introduction */}
           <motion.p

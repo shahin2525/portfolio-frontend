@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="hidden md:flex flex-1 items-center justify-end">
           <NavigationMenu>
             <NavigationMenuList>
-              {["dashboard", "projects", "blogs", "contact"].map((item) => (
+              {["projects", "blogs", "contact"].map((item) => (
                 <NavigationMenuItem key={item} asChild>
                   <Link
                     href={`/${item}`}
@@ -72,8 +72,9 @@ export default function Navbar() {
               <SheetDescription className="sr-only">
                 Main navigation menu
               </SheetDescription>
+
               <nav className="flex flex-col space-y-3 pt-6">
-                {["dashboard", "projects", "blogs", "contact"].map((item) => (
+                {["projects", "blogs", "contact"].map((item) => (
                   <Link
                     key={item}
                     href={`/${item}`}

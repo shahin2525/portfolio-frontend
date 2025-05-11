@@ -1,3 +1,4 @@
+import About from "@/components/home/about/About";
 import { BannerSection } from "@/components/home/Banner";
 import { BlogsSection } from "@/components/home/blog/BlogSection";
 import { IntroSection } from "@/components/home/Designation";
@@ -15,6 +16,7 @@ const HomePage = async () => {
     <div>
       <IntroSection />
       <BannerSection />
+      <About />
       <SkillsSection />
       <ProjectsSection projects={data} />
       <BlogsSection blogs={blogs} />
