@@ -2,7 +2,12 @@ import { ProjectCard } from "@/components/home/ProjectCard";
 import { getAllProjects } from "@/services/project";
 import { TProject } from "@/types/project";
 import React from "react";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Projects Page",
+  description: "...",
+};
 const AllProjectsPage = async () => {
   const { data } = await getAllProjects();
 

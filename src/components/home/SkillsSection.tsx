@@ -89,7 +89,7 @@ export function SkillsSection() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full py-12 md:py-16 lg:py-20 bg-slate-900"
+      className="w-full py-8 md:py-10 lg:py-12 bg-slate-900"
     >
       <div className="container px-4 md:px-6 mx-auto">
         {/* Section Title */}

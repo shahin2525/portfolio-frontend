@@ -19,6 +19,8 @@ import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
+import logo2 from "@/app/assets/profile4.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMounted, setIsMounted] = useState(false);
@@ -37,7 +39,17 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex flex-1 items-center justify-start">
           <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold ">MS</span>
+            <span className="text-xl font-bold ">
+              {" "}
+              <Image
+                src={logo2}
+                alt="Md. Shahin"
+                height={50}
+                width={50}
+                className="object-cover rounded-full"
+                priority
+              />
+            </span>
           </Link>
         </div>
 

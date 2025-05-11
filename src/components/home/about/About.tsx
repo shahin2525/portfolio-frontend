@@ -1,4 +1,3 @@
-// About component with concise 500-word description
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
@@ -17,9 +16,9 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="w-full py-12 md:py-24 lg:py-32"
+      className="w-full py-8 md:pt-10 lg:pt-12 md:pb-4 lg:pb-6"
     >
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-6 mx-auto">
         {/* Title Section */}
         <motion.div
           initial={{ y: -20, opacity: 0 }}
@@ -31,12 +30,12 @@ const About = () => {
             About Me
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Full Stack Developer with a passion for building efficient web
-            solutions
+            Full Stack Developer passionate about building scalable and smart
+            web applications
           </p>
         </motion.div>
 
-        {/* About Content - Under 500 words */}
+        {/* Short About Description */}
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -44,49 +43,45 @@ const About = () => {
           className="prose prose-lg dark:prose-invert max-w-4xl mx-auto mb-16"
         >
           <p className="font-medium">
-            I&apos;m a Full Stack JavaScript/TypeScript developer specializing
-            in React, Next.js, and Node.js ecosystems. Currently completing my
-            Political Science degree, I bring unique interdisciplinary
-            perspective to building web applications that combine technical
-            excellence with user-centric design.
+            Hi, I&apos;m <strong>Md Shahin</strong> — a Full Stack
+            JavaScript/TypeScript Developer with a passion for clean code,
+            performance, and real-world problem solving. Here’s a quick
+            overview:
           </p>
-
+          <ul>
+            <li>
+              💻 Specialized in <strong>React, Next.js, Node.js</strong> and
+              TypeScript
+            </li>
+            <li>
+              🛠 Skilled in building{" "}
+              <strong>role-based dashboards, secure authentication</strong>, and
+              dynamic UIs
+            </li>
+            <li>
+              📊 Experienced with <strong>MongoDB, PostgreSQL, Prisma</strong>,
+              and REST APIs
+            </li>
+            <li>
+              🚀 Deployed multiple projects using{" "}
+              <strong>Vercel, CI/CD, Docker</strong>
+            </li>
+            <li>
+              🧠 Exploring <strong>AI-integrated interfaces</strong> and{" "}
+              <strong>serverless architectures</strong>
+            </li>
+            <li>
+              🎓 Final year Political Science student bringing analytical
+              thinking to development
+            </li>
+          </ul>
           <p>
-            My frontend expertise includes architecting responsive applications
-            with React hooks, TypeScript, and modern state management. I craft
-            polished UIs using Tailwind CSS, shadcn/ui, and Ant Design, ensuring
-            optimal performance across devices. On the backend, I build scalable
-            Node.js APIs with Express, implementing secure authentication and
-            efficient database interactions.
-          </p>
-
-          <p>
-            What distinguishes my approach is the combination of technical
-            skills with analytical thinking from my Political Science
-            background. I don&apos;t just write code—I solve real problems.
-            Whether optimizing API response times, improving Lighthouse scores,
-            or designing more intuitive interfaces, I focus on delivering
-            measurable results.
-          </p>
-
-          <p>
-            I&apos;m particularly interested in the intersection of web
-            development and AI, having implemented several projects integrating
-            machine learning with web interfaces. My current focus includes
-            mastering advanced TypeScript patterns and serverless architectures
-            to build more efficient applications.
-          </p>
-
-          <p>
-            Committed to clean code principles and continuous learning, I thrive
-            in collaborative environments where I can both contribute and grow.
-            My work demonstrates technical proficiency balanced with practical
-            problem-solving—the kind that delivers value to end users and
-            businesses alike.
+            I love collaborating, learning, and turning complex ideas into
+            elegant, working products.
           </p>
         </motion.div>
 
-        {/* Skills Cards (same as before) */}
+        {/* Skills Cards */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -127,7 +122,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Node.js, Express, RESTful APIs, Authentication, Middleware
+                  Node.js, Express, RESTful APIs, Middleware, Authentication
                 </CardDescription>
               </CardContent>
             </Card>
@@ -146,7 +141,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  PostgreSQL, MongoDB, Prisma, Mongoose, Query Optimization
+                  MongoDB, PostgreSQL, Prisma, Mongoose, Query Optimization
                 </CardDescription>
               </CardContent>
             </Card>
@@ -165,7 +160,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Git, Docker, CI/CD, Testing, Vercel, Cloud Deployment
+                  Git, Docker, CI/CD, Vercel, Cloud Deployment, Testing
                 </CardDescription>
               </CardContent>
             </Card>

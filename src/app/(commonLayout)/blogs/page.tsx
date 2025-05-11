@@ -2,7 +2,12 @@ import { BlogCard } from "@/components/home/blog/BlogCard";
 import { getAllBlogs } from "@/services/blog";
 import { TBlog } from "@/types/blog";
 import React from "react";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Blogs Page",
+  description: "...",
+};
 const AllBlogsPage = async () => {
   const { data } = await getAllBlogs();
 
