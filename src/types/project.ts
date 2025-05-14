@@ -12,4 +12,6 @@ export type TProject = {
   githubRepo?: string; // Optional GitHub repository link
   status?: string; // Optional project status
   my_role?: string; // Optional project status
+  challengesFaced?: string;
+  futurePlan?: string;
 };
